@@ -16,9 +16,9 @@ from geoalchemy.postgis import PGComparator
 # Edit to reflect the db name, user and password to connect to your
 # postgis database.
 DB_SETTINGS = dict(
-    db_name = 'spaces',
-    db_user = 'dev',
-    db_password = 'password',
+    db_name = '...',
+    db_user = '...',
+    db_password = '...',
     db_host = 'localhost',
     db_port = 5432
 )
