@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Filter by proximity UI example.</title>
+    <link type="text/css" rel="stylesheet"
+        href="http://ajax.aspnetcdn.com/ajax/jquery.mobile/1.0/jquery.mobile-1.0.min.css"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+    </script>
+    <script src="http://jquery-geolocation.googlecode.com/files/jquery.geolocation.js">
+    </script>
+    <script src="http://documentcloud.github.com/backbone/test/vendor/underscore-1.1.6.js">
+    </script>
+    <script src="http://documentcloud.github.com/backbone/backbone.js">
+    </script>
+    <script type="text/coffeescript" src="${get_static_url('client.coffee')}">
+    </script>
+    <script src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js">
+    </script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.mobile/1.0/jquery.mobile-1.0.min.js">
+    </script>
+  </head>
+  <body>
+    <div>
+      <div id="index-page" class="page" data-role="page">
+        <div data-role="content">
+          <div id="loading-message">
+            <h1>
+              Fetching your location
+            </h1>
+            <p>
+              Choose "OK", "allow" or "always allow" if prompted by your browser.
+            </p>
+          </div>
+          <div id="location-bar" class="bar location-bar" style="display: none">
+            <div class="slider">
+              <div data-role="fieldcontain">
+                <input type="range" 
+                    name="location-slider" 
+                    class="location-slider" 
+                    value="100" 
+                    min="40"
+                    max="100"
+                />
+              </div>
+            </div>
+          </div>
+          <ul class="listings" data-role="listview" data-inset="true">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
