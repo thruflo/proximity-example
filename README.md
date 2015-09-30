@@ -26,7 +26,7 @@ Run the app:
 
 And play with it on [http://localhost:8080][].
 
-[a spatially enabled SQL database]: http://www.geoalchemy.org/tutorial.html
+[a spatially enabled SQL database]: http://geoalchemy.readthedocs.org/en/latest/tutorial.html
 [coffeescript]: http://jashkenas.github.com/coffee-script/
 [http://localhost:8080]: http://localhost:8080
 [my blog]: http://thruflo.com
